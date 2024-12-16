@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .head{
+        font-size: 30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font: bold;
+        
+    }
+    .btn{
+        color: rgb(22, 43, 227);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+    .btn:hover{
+        background-color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        box-shadow: 5px 5px 5px   rgba(235, 206, 206, 0.2);
+    }
+   
+</style>
+<body style="background-color: #212121; color: white;">
+   <p id="one" class="head">Lorem ipsum dolor sit   amet consectetur adipisicing elit. Totam minus labore incidunt eius, officiis id doloremque! Laboriosam facere quisquam</p>
+   <p id="two" class="head"></p>
+   <p id="three" class="head"></p>
+   <p id="demo"></p>
+
+  <center>
+
+      <button onclick="three()" class="btn">click</button>
+      <button onclick="reset()" class="btn">reset</button>
+      <button onclick="open(3,4)" class="btn">open</button>
+    </center>
+
+
+    
+    <script >
+        let html=document.getElementById('one').innerHTML;
+        document.getElementById('two').innerHTML=html
+        const three=()=>{
+            document.getElementById("three").innerHTML=html;
+        }
+        const reset=()=>{
+            document.getElementById("three").innerHTML="";
+        }
+        console.log(16 + 4 + "Volvo")
+
+        function myFunction(p1, p2) {
+            return p1 * p2;
+          }
+          
+          let result = myFunction(4, 3);
+          document.getElementById("demo").innerHTML = result;
+          </script>
+        
+
+
+</body>
+</html>
